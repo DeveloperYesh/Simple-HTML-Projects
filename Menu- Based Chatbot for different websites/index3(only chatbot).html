@@ -1,0 +1,199 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Chatterbot@Mrecw</title>
+        <link rel="stylesheet" href="style.css">
+
+
+        <!-- idhi scroll bar ki code kaani implement chesthe motham page lo unna scroll kuda change aiyi manam petina code osthundi,
+        anduke comments lo petinam FULL STOP
+        <style>
+          /* width */
+          ::-webkit-scrollbar {
+            width: 1px;
+          }
+          
+          /* Track */
+          ::-webkit-scrollbar-track {
+            background:  #ffffff; 
+          }
+           
+          /* Handle */
+          ::-webkit-scrollbar-thumb {
+            background: #8f11bd; 
+          }
+          
+          /* Handle on hover */
+          ::-webkit-scrollbar-thumb:hover {
+            background: #f7f7f7; 
+          }
+
+          <h1>{
+            position: absolute;
+            top: ;
+            right: ''
+            }
+          
+          -->
+          
+           <!---
+            soooooooo ikkada (i mean kindha action class lo),
+            after event listener function,
+            manam getelementbyId(buttons) kinda malli actiontoggle petinam,
+            so that getid(btn) chesthe,
+            kinda unna getelementbyid(para) lodhi execute avuthadi,
+            if we didn't do this what happens ante-----,
+            circle paina click chesthe panel osthadi,
+            button paina thappa ekkada click chesina panel pothundi,
+            and button paina click chesthe kuda pothundi but but butttt malli circle click chesthe output display avuthundi
+            but yeah this shudn't happenuu',
+            anduke we've added that paina cheppina thing PERIOD
+          --> 
+
+
+
+
+    </head>
+    <body>
+        <div class="action" onclick="actionToggle();">
+            <span>+</span>
+            <ul>
+                <h1 style = "padding: 5px; font-size: 16px; color:white; background:#8f11bd; font-family: 'Poppins',sans-serif;" >**Chatterbot@MRECW</h1>
+                <h7 style="margin: 0;padding: 10;font-family: 'Poppins',sans-serif; font-size:15px;">Welcome to MRECW Chatterbot👋🏼, what services are you looking for ? </h7>
+              <!-- for Placement button-->
+                <li>
+                  <img src="1.png">
+                  <button id = "btn"> Placement </button>
+                  <br>
+                  <p id = "para" style="position:relative;"></p>
+                  <script>
+                  document.getElementById("btn").addEventListener("click", placementFunc);
+                  function placementFunc() {
+                  actionToggle();
+                  document.getElementById("para").innerHTML = "Every year we have 100% placements in our college Companies like Mentor graphics with 20 lakh package, Tiger analytics with 19 lakh package, cognizant, wipro, deloitte and so on. Here is a glimpse of the companies which come to the college every year:" + "<br>" + '<a href="http://www.mallareddyecw.com/placements.html" target="_blank">' + "http://www.mallareddyecw.com/placements.html"+ '</a>';
+                 }
+                
+                  </script>
+                </li>
+              <!-- for Transportation button-->
+                <li>
+                  <img src="2.png">
+                  <button id = "btn2">Transportation</button>
+                  <br>
+                  <p id = "para2" style="position:relative;"></p>
+                  <script>
+                  document.getElementById("btn2").addEventListener("click", transportfun);
+                  function transportfun() {
+                  actionToggle();
+                  document.getElementById("para2").innerHTML = "Transport fees is 35,000 for all routes The routes available are: Uppal, Ecil, Alwal, LB Nagar, Patancheru, Kukatpally";
+                 }
+                  </script>
+                </li>
+              <!-- for Courses button-->
+                <li>
+                  <img src="1.png">
+                  <button id = "btn3">Courses</button>
+                  <br>
+                  <p id = "para3" style="position:relative;"></p>
+                  <script>
+                  document.getElementById("btn3").addEventListener("click", coursefun);
+                  function coursefun() {
+                  actionToggle();
+                  document.getElementById("para3").innerHTML = "The programs available in our MRECW are:" + "<br>" + "1. Computer Engineering:"+'<a href="http://www.mallareddyecw.com/CSEdepartments.html" target="_blank">'+"Cse  gurinchi telsukovadaniki ikkada nokkandi"+ '</a>' +"<br>"+ "2. Electronics and Computer Science:"+ '<a href="http://www.mallareddyecw.com/ECEdepartments.html" target="_blank">'+"Ece  gurinchi telsukovadaniki ikkada nokkandi"+'</a>'+"<br>"+"3. Information Technology:"+ '<a href="http://www.mallareddyecw.com/ITdepartments.html" target="_blank">'+"IT  gurinchi telsukovadaniki ikkada nokkandi"+'</a>'+"<br>" + "4. Electronics and Electronics Engineering:"+'<a href="http://www.mallareddyecw.com/EEEdepartments.html" target="_blank">'+"Eee  gurinchi telsukovadaniki ikkada nokkandi"+'</a>'+"<br>"+ "5. Master of Business Administration:"+'<a href="http://mallareddyecw.com/MBAdepartments.html" target="_blank">'+"Mba  gurinchi telsukovadaniki ikkada nokkandi"+'</a>';
+                  }
+                  </script>
+                </li>
+              <!-- for Hostel Information button-->
+                <li>
+                  <img src="1.png">
+                  <button id = "btn4">Hostel Information</button>
+                  <br>
+                  <p id = "para4" style="position:relative;"></p>
+                  <script>
+                  document.getElementById("btn4").addEventListener("click", hostelfun);
+                  function hostelfun() {
+                  actionToggle();
+                  document.getElementById("para4").innerHTML = "Hostel fees for - 3 beds per room with attached washroom is 850000,4 beds per room with allowance for common washroom is 70000. The students should bring their own plates, buckets, mugs.";
+                  }
+                  </script>
+                </li>
+              <!-- for Tution Fee button-->
+                <li>
+                  <img src="1.png">
+                  <button id = "btn5"> Tuition Fee </button>
+                  <br>
+                  <p id = "para5" style="position:relative;"></p>
+                  <script>
+                  document.getElementById("btn5").addEventListener("click", tutionfeefun);
+                  function tutionfeefun() {
+                  actionToggle();
+                  document.getElementById("para5").innerHTML = "Tuition fees can be paid physically using demand draft or Online:"+"<br>"+ '<a href="https://icici.myclassboard.com/Login/ViewForRedirectingOnSessionOut" target="_blank">'+"mi rendu gaajulu ammukovadaniki ikkada kotandi"+'</a>';
+                  }
+                  </script>
+                </li>
+               <!-- for Library Overview button-->
+                <li>
+                  <img src="1.png">
+                  <button id = "btn6">Library Overview</button>
+                  <br>
+                  <p id = "para6" style="position:relative;"></p>
+                  <script>
+                  document.getElementById("btn6").addEventListener("click", libfun);
+                  function libfun() {
+                  actionToggle();
+                  document.getElementById("para6").innerHTML = "We have wide variety of books written by famous authors. The students will be provided with a bar code of their own so that they can avail the services. We also have IEEE explore digital library feature so that the students can benifit to the fullest. Here is a glimpse of the library present in the college:" + "<br>" + '<a href="http://www.mallareddyecw.com/infratructure.html#library" target="_blank">'+"meeru kattina 8k deniko telsukovadaniki ikkada kotandi"+'</a>';
+                  }
+                 </script>
+                </li>
+              <!-- for Hackathons,tech button-->
+                <li>
+                  <img src="1.png">
+                  <button id = "btn7">Hackathons & Technical </button>
+                  <br>
+                  <p id = "para7" style="position:relative;"></p>
+                  <script>
+                  document.getElementById("btn7").addEventListener("click", libfun);
+                  function libfun() {
+                  actionToggle();
+                  document.getElementById("para7").innerHTML = "To enhance our knowledge in technical skills and improve our innovative ideas our college will conduct many national level hackathons";
+                  }
+                  </script>
+                </li>
+              <!-- for event button-->
+                <li>
+                  <img src="1.png">
+                  <button id = "btn8">Cultural Events</button>
+                  <br>
+                  <p id = "para8" style="position:relative;"></p>
+                  <script>
+                  document.getElementById("btn8").addEventListener("click", culturefun);
+                  function culturefun() {
+                  actionToggle();
+                  document.getElementById("para8").innerHTML = "In every academic year we celebrate many cultural events like sarang, women's day and we also Dusshra in a great manner by organizing Batkamma and Dandia nights programs in our college" + "<br>" + "For more information visit:" + "<br>" + '<a href="http://www.mallareddyecw.com/events.html" target="_blank">'+"events kosam ikkada click cheyandi"+'</a>';
+                  }
+                  </script>
+                </li>
+              <!-- for help desk button-->
+                <li>
+                  <img src="1.png">
+                  <button id = "btn9">Help Desk</button>
+                  <br>
+                  <p id = "para9" style="position:relative;"></p>
+                  <script>
+                  document.getElementById("btn9").addEventListener("click", helpfun);
+                  function helpfun() {
+                  actionToggle();
+                  document.getElementById("para9").innerHTML = "please feel free to mail us at adminmrecw@gmail.com " + "<br>" + "or reach us to"+'<a href="tel:+91 7207231199">'+"+91 7207231199"+'</a>' +"<br>"+ '<a href="tel:+91 7207031994">'+"+91 7207031994"+'</a>';
+                 }
+                  </script>
+                </li>
+            </ul>
+        </div>
+        <script type="text/javascript">
+            function actionToggle(){
+                var action = document.querySelector('.action');
+                action.classList.toggle('active')
+            }
+        </script>
+    </body>
+</html>

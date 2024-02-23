@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+*
+/*for welcome 
+{
+    margin: 0;
+    padding: 10;
+    font-family: 'Poppins',sans-serif;
+    color:#ff8400;   idhi enable chesthe motham page lo font antha, apart from chatbot container window idhi color lo osthadi 
+}
+*/
+
+/* only for buttons*/
+
+button {        
+    background-color: #f8f8f8; 
+    width: 400%;
+    color: #8f11bd; 
+    padding: 2px; 
+    margin: 5px 30px; 
+    border: 2px solid #8f11bd;
+    border-radius: 12px; 
+    cursor: pointer; 
+     } 
+
+/*for button paina cursor pedithe color change avvadaniki*/
+
+button:hover {    
+    background-color: #8f11bd;
+    color: white;
+}
+
+/*for circle button*/
+
+.action 
+{
+    position: fixed;
+    bottom: 20px;
+    right : 50px;
+    width: 63px;
+    height: 63px;
+    background: rgb(255, 255, 255);
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 5px 5px 3px rgba(0,0,0,0.1);
+} 
+
+/* for +*/  /* now we are putting the mrecw chatbot logo so removing just the color and font-size */
+
+.action span 
+{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;  
+    justify-content: center;
+    align-items: center;
+    /* color: #8f11bd; */
+    /* font-size: 1.6em; */
+    transition: 0.3s ease-in-out;
+}
+
+/* for + rotation*/ /* for logo ratation */
+
+.action.active span 
+{
+  transform: rotate(360deg);
+} 
+
+/*for dabba & dantla contents */
+
+.action ul 
+{
+    position: absolute;
+    bottom: 54px;
+    right: 10px;
+    height: 380px;
+    width: 500px;
+    overflow:auto;
+    background:  #ffffff;
+    min-width: 1px;
+    padding: 0px;
+    border-radius: 10px;
+    opacity: 0;
+    visibility: hidden;  
+}
+
+/* for dabba and contents to paiki visible avaadam */
+
+.action.active ul 
+{
+    bottom: 54px;
+    opacity: 1;
+    visibility: visible;
+    transition: 0.36s;
+}
+
+/* for image fosition*/
+
+.action ul li 
+{
+    List-style: none;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 10px 0; /*image okate kaadu both image and ah area lo--button kakund--unna anni*/
+    transition: 0s; /**/
+}
+
+/*for dabba lo image pakka unna buttons pakka prasthutam osthunna content paina curson pedithe dark avaniki.*/
+
+.action ul li:hover
+{
+   font-weight: 100;     /*cursor text or image or aa dabba lo ekadaina cursor pedithe bold avadaniki but ipudu nen adhi normal lone petesthunna*/
+}
+
+/*for dabba lo seperate cheyadaniki geethalu*/
+
+.action ul li:not(:last-child)
+{
+    border-bottom: 1px solid #8f11bd;
+}
+
+/*for image paina cursor petaka mundhu unna opacity*/
+
+.action ul li img 
+{
+    margin-right: 10px;
+    opacity:0.8;
+    transform: scale(0.8);
+}
+
+/*for image paina mouse pedithe opacity*/
+
+.action ul li:hover img 
+{
+    opacity:1;
+}
+ 
+/* unvisited link */
+a:link {
+    color: #8f11bd;
+  }
+  
+  /* visited link */
+  a:visited {
+    color: rgb(193, 90, 6);
+  }
+  
+  /* mouse over link */
+  a:hover {
+    color: #8f11bd;
+    background-color: transparent;
+    text-decoration: underline;
+  }
+  
+  /* selected link */
+  a:active {
+    color: rgb(0, 179, 255);
+    background-color: transparent;
+    text-decoration: underline;
+  }
+
+
+  /*  for headings to stick at a place*/
+
+  .content {
+    padding: 0px;
+  }
+  
+  .sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+  
+  .sticky + .content {
+    padding-top: 102px;
+  }
